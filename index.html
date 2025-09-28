@@ -1,98 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV HỒ VŨ VIỆT THẮNG</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV • DR. HỒ VŨ VIỆT THẮNG – Y tế × Công nghệ</title>
+  <meta name="description" content="Bác sĩ Y học cổ truyền – Phục hồi chức năng & Full‑stack Developer. Hồ sơ công việc, dự án và sáng kiến số hoá y tế." />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --ink:#0f172a;         /* slate-900 */
+      --muted:#64748b;       /* slate-500 */
+      --surface:rgba(255,255,255,.9);
+      --primary:#2563eb;     /* indigo-600 */
+      --accent:#10b981;      /* emerald-500 */
+      --ring:rgba(37,99,235,.25);
+    }
+    /* Glass card */
+    .glass{ background: var(--surface); backdrop-filter: blur(10px); }
+    /* Nice focus ring */
+    .ringy:focus{ outline: none; box-shadow: 0 0 0 6px var(--ring); }
+    /* Print tweaks */
+    @media print{
+      .no-print{ display:none !important; }
+      body{ background: #fff !important; }
+      .glass{ background:#fff !important; box-shadow:none !important; }
+      a[href^="http"]::after{ content:" (" attr(href) ")"; font-weight: 400; color: #334155; }
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <div class="max-w-3xl mx-auto my-10 bg-white p-8 shadow-lg rounded-lg">
-        <div class="text-center mb-8">
-            <img src="87b38c64a63719694026.jpg" alt="Profile Picture" class="w-36 h-36 rounded-full mx-auto border-4 border-blue-500 shadow-md">
-            <h1 class="text-3xl font-extrabold mt-4 text-gray-800">HỒ VŨ VIỆT THẮNG</h1>
-            <p class="text-lg text-gray-600">Bác sĩ Y học cổ truyền - Phục hồi chức năng</p>
+<body class="min-h-screen text-[var(--ink)] bg-[radial-gradient(1200px_600px_at_10%_10%,#dbeafe_0%,transparent_50%),radial-gradient(1000px_500px_at_90%_20%,#dcfce7_0%,transparent_45%),linear-gradient(180deg,#f8fafc,#ffffff)]">
+  <!-- NAV / BRAND -->
+  <header class="no-print sticky top-0 z-40 w-full bg-white/70 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 text-white font-bold">HT</span>
+        <div class="leading-tight">
+          <p class="font-semibold">DR. HỒ VŨ VIỆT THẮNG</p>
+          <p class="text-sm text-slate-500">Y học cổ truyền • Phục hồi chức năng × Full‑stack Developer</p>
         </div>
-
-        <div class="mb-8">
-            <h2 class="text-2xl font-semibold border-b-4 border-blue-500 pb-2 inline-block text-gray-800">Thông Tin Cá Nhân</h2>
-            <ul class="mt-4 space-y-3 text-gray-700">
-                <li><strong class="font-medium">Tuổi:</strong> 1997</li>
-                <li><strong class="font-medium">Địa chỉ:</strong> Tam Hòa, Đại Quang, Đại Lộc, Quảng Nam</li>
-                <li><strong class="font-medium">Số điện thoại / ZALO:</strong> +84 345 056 117</li>
-                <li><strong class="font-medium">Văn bằng chuyên môn:</strong> Bác sĩ Y học cổ truyền</li>
-                <li><strong class="font-medium">Chứng chỉ hành nghề:</strong> Khám bệnh, chữa bệnh Y học cổ truyền</li>
-                <li><strong class="font-medium">Chứng chỉ PHCN:</strong> Chứng chỉ đào tạo liên tục Phục hồi chức năng cơ bản 6 tháng</li>
-            </ul>
-        </div>
-
-        <div class="mb-8">
-            <h2 class="text-2xl font-semibold border-b-4 border-blue-500 pb-2 inline-block text-gray-800">Kinh Nghiệm Làm Việc</h2>
-            <div class="mt-6 space-y-6">
-                <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-xl font-bold text-blue-500">Bệnh viện Phục hồi chức năng TP Đà Nẵng</h3>
-                    <p class="text-sm text-gray-600 mt-1">Vị trí: Bác sĩ</p>
-                    <p class="text-sm text-gray-600">Thời gian: 2022 - 2025</p>
-                    <p class="text-sm text-gray-600 mt-2">Mô tả: Làm việc tại Phòng Kế hoạch tổng hợp - Chỉ đạo tuyến, Đơn vị Y tế du lịch, Khoa Y học cổ truyền, Khoa Phục hồi chức năng người lớn</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mb-8">
-            <h2 class="text-2xl font-semibold border-b-4 border-blue-500 pb-2 inline-block text-gray-800">Kinh Nghiệm làm việc ngoài chuyên môn y tế</h2>
-            <div class="mt-6 space-y-6">
-                <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-xl font-bold text-blue-500">Kinh nghiệm ngoài chuyên môn y tế</h3>
-                    <p class="text-sm text-gray-600 mt-1">Công nghệ thông tin</p>
-                    <p class="text-sm text-gray-600">Ngôn ngữ lập trình: HTML/CSS/JAVASCRIPT PHP/MYSQL</p>
-                    <p class="text-sm text-gray-600 mt-2">Tạo và quản lý Website, trang thông tin y tế, phòng khám ... , Thành thạo về Facebook ADs, Google ADS,...</p>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <h2 class="text-2xl font-semibold border-b-4 border-blue-500 pb-2 inline-block text-gray-800">Các Sáng kiến và sản phẩm</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-lg font-medium text-blue-500">Cải tiến quy trình chuẩn bị parafin trước điều trị tại Khoa Phục hồi chức năng - Bệnh viện Phục hồi chức năng TP Đà Nẵng</h3>
-                    <p class="text-sm text-gray-600 mt-2">Mô tả: Cải tiến việc chuẩn bị đúc sáp parafin thủ công sang nồi nấu sáp và túi sáp parafin</p>
-                </div>
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-lg font-medium text-blue-500">Website Danh bạ bệnh viện</h3>
-                    <p class="text-sm text-gray-600 mt-2">Giúp nhân viên y tế theo dõi lịch trực nhanh chóng và tìm nhanh số điện thoại các nhân viên khác trong bệnh viện</p>
-                    <a href="https://danhbabenhvien.vercel.app" target="_blank" >https://danhbabenhvien.vercel.app</a>
-                </div>
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-lg font-medium text-blue-500">Trang tính Quản Lý công việc phòng Kế hoạch tổng hợp</h3>
-                    <p class="text-sm text-gray-600 mt-2">Xây dựng hệ thống quản lý báo cáo tiến độ công việc, thông báo về email hàng ngày bằng Google Sheet</p>
-                    <button><a href="https://docs.google.com/spreadsheets/d/1UcPt5jrSsgPpHtvzxyNJZzISxgRGKOS0MkQ9iUInanc/edit?gid=0#gid=0">Xem file mẫu</a></button>
-                </div>
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-lg font-medium text-blue-500">Website Quản lý văn bản phòng Kế hoạch tổng hợp</h3>
-                    <p class="text-sm text-gray-600 mt-2">Phân loại và quản lý văn bản</p>
-                    <a href="https://khth.vercel.app">https://khth.vercel.app</a>
-                </div>
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-lg font-medium text-blue-500">Trang tính chia giờ thủ thuật, Chống xuất toán Bảo hiểm y tế</h3>
-                    <p class="text-sm text-gray-600 mt-2">Chia giờ thủ thuật châm cứu và phục hồi chức năng</p>
-                    <button><a href="https://docs.google.com/spreadsheets/d/1rtQRxnHnjIcUOwDvOp5LvsObxQ7kj4Nl72_XAw8Lg-4/edit?gid=887443890#gid=887443890">Xem file mẫu</a></button>
-                </div>
-                
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-lg font-medium text-blue-500">Website Tạo và Quản lý hồ sơ Phiếu thực hiện thủ thuật nhanh chóng</h3>
-                    <p class="text-sm text-gray-600 mt-2">Số hóa và quản lý dữ liệu hồ sơ bệnh án, giảm thiểu thời gian viết tay</p>
-                    <a href="https://phcnnl.vercel.app">https://phcnnl.vercel.app</a>
-                </div>
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-lg font-medium text-blue-500">Hệ thống Website Cá Nhân toihocy.com</h3>
-                    <p class="text-sm text-gray-600 mt-2">Hệ thống chứa hơn 5 website chia sẻ về tài liệu, thông tin y tế</p>
-                    <a href="https://toihocy.com">https://toihocy.com</a>
-                    <a href="https://baithuoc.toihocy.com">https://baithuoc.toihocy.com</a>
-                    <a href="https://ecg.toihocy.com">https://ecg.toihocy.com</a>
-                    <a href="https://yhct.toihocy.com">https://yhct.toihocy.com</a>
-                </div>
-            </div>
-        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-4 text-sm text-slate-600">
+        <a href="#about" class="hover:text-indigo-700">Thông tin</a>
+        <a href="#experience" class="hover:text-indigo-700">Kinh nghiệm</a>
+        <a href="#projects" class="hover:text-indigo-700">Dự án</a>
+        <a href="#contact" class="hover:text-indigo-700">Liên hệ</a>
+      </nav>
     </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="mx-auto max-w-6xl px-4 pt-10 pb-6">
+    <div class="grid md:grid-cols-[auto,1fr] items-center gap-8">
+      <div class="glass rounded-2xl p-5 shadow-xl border border-white/60">
+        <img src="87b38c64a63719694026.jpg" alt="Ảnh chân dung DR. Hồ Vũ Việt Thắng" class="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover border-4 border-white shadow-lg mx-auto"/>
+      </div>
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+          DR. HỒ VŨ VIỆT THẮNG
+        </h1>
+        <p class="mt-2 text-lg text-slate-600">Bác sĩ Y học cổ truyền – Phục hồi chức năng • Founder & Full‑stack Developer</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-600 text-white text-sm">
+            <!-- stethoscope icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-4 w-4 fill-current"><path d="M6 2a1 1 0 0 1 1 1v5a3 3 0 1 0 6 0V3a1 1 0 1 1 2 0v5a5 5 0 0 1-10 0V3a1 1 0 0 1 1-1zM17 13a3 3 0 1 1 0 6h-1a4 4 0 0 1-4-4v-3a1 1 0 1 1 2 0v3a2 2 0 0 0 2 2h1a1 1 0 1 0 0-2h-1a1 1 0 1 1 0-2h1z"/></svg>
+            Y tế số
+          </span>
+          <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-600 text-white text-sm">
+            <!-- code icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-4 w-4 fill-current"><path d="M9.4 16.6 5.8 13l3.6-3.6 1.4 1.4L8.6 13l2.2 2.2-1.4 1.4zM14.6 16.6l-1.4-1.4L15.4 13l-2.2-2.2 1.4-1.4L18.2 13l-3.6 3.6z"/></svg>
+            Full‑stack (HTML/JS, PHP/MySQL)
+          </span>
+          <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sky-600 text-white text-sm">Apps Script • Google Sheets</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3 no-print">
+          <a href="#contact" class="ringy inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 shadow">
+            <span>Liên hệ</span>
+          </a>
+          <button onclick="window.print()" class="ringy inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 shadow">
+            <span>In CV</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="mx-auto max-w-6xl px-4 py-6">
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="glass rounded-2xl p-6 shadow-xl border border-white/60">
+        <h2 class="text-xl font-semibold flex items-center gap-2">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-600 text-white">i</span>
+          Thông tin cá nhân
+        </h2>
+        <ul class="mt-4 space-y-2 text-slate-700">
+          <li><span class="font-medium">Năm sinh:</span> 1997</li>
+          <li><span class="font-medium">Địa chỉ:</span> Thành phố Đà Nẵng</li>
+          <li><span class="font-medium">Điện thoại / Zalo:</span> <a class="text-indigo-700 hover:underline" href="tel:+84345056117">+84 345 056 117</a></li>
+          <li><span class="font-medium">Văn bằng:</span> Bác sĩ Y học cổ truyền</li>
+          <li><span class="font-medium">Chứng chỉ hành nghề:</span> Khám bệnh, chữa bệnh Y học cổ truyền</li>
+          <li><span class="font-medium">Chứng chỉ PHCN:</span> Đào tạo liên tục PHCN cơ bản 6 tháng</li>
+        </ul>
+      </div>
+
+      <div class="glass rounded-2xl p-6 shadow-xl border border-white/60">
+        <h2 class="text-xl font-semibold flex items-center gap-2">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white">{ }</span>
+          Năng lực công nghệ
+        </h2>
+        <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+          <div class="p-3 rounded-xl border border-slate-200 bg-white">
+            <p class="font-medium">Web • Frontend</p>
+            <p class="text-slate-600">HTML, Tailwind CSS, JavaScript</p>
+          </div>
+          <div class="p-3 rounded-xl border border-slate-200 bg-white">
+            <p class="font-medium">Backend</p>
+            <p class="text-slate-600">PHP/MySQL, Google Apps Script</p>
+          </div>
+          <div class="p-3 rounded-xl border border-slate-200 bg-white">
+            <p class="font-medium">Tự động hoá</p>
+            <p class="text-slate-600">Google Sheets, Email, WebApp</p>
+          </div>
+          <div class="p-3 rounded-xl border border-slate-200 bg-white">
+            <p class="font-medium">Marketing</p>
+            <p class="text-slate-600">SEO cơ bản, Facebook/Google Ads</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="mx-auto max-w-6xl px-4 py-6">
+    <div class="glass rounded-2xl p-6 shadow-xl border border-white/60">
+      <h2 class="text-xl font-semibold">Kinh nghiệm làm việc</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <!-- MEDICAL -->
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-lg font-bold text-indigo-700">Bệnh viện Phục hồi chức năng TP. Đà Nẵng</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-indigo-50 text-indigo-700">2022 – 2025</span>
+          </div>
+          <p class="text-sm text-slate-600 mt-1">Vị trí: Bác sĩ</p>
+          <p class="text-sm text-slate-600">Đơn vị: Phòng KHTH – Chỉ đạo tuyến; Y tế du lịch; Khoa YHCT; Khoa PHCN người lớn.</p>
+          <ul class="mt-3 list-disc list-inside text-sm text-slate-700 space-y-1">
+            <li>Tổ chức quy trình, chuẩn hoá hồ sơ điều trị.</li>
+            <li>Ứng dụng số hoá trong theo dõi điều trị và quản lý dữ liệu.</li>
+          </ul>
+        </div>
+        <!-- MEDICAL -->
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-lg font-bold text-indigo-700">Phòng khám Đa khoa Hữu Phước</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-indigo-50 text-indigo-700">2025 – nay</span>
+          </div>
+          <p class="text-sm text-slate-600 mt-1">Vị trí: Bác sĩ</p>
+          <p class="text-sm text-slate-600">Đơn vị: Y học cổ truyền và Phục hồi chức năng</p>
+          <ul class="mt-3 list-disc list-inside text-sm text-slate-700 space-y-1">
+            <li>Khám chữa bệnh y học cổ truyền và phục hồi chức năng</li>
+          </ul>
+        </div>
+        <!-- TECH -->
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-lg font-bold text-emerald-700">Kinh nghiệm công nghệ thông tin</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Song hành</span>
+          </div>
+          <p class="text-sm text-slate-600 mt-1">Full‑stack: HTML/CSS/JS, PHP/MySQL, Apps Script</p>
+          <ul class="mt-3 list-disc list-inside text-sm text-slate-700 space-y-1">
+            <li>Phát triển webapp nội bộ cho quy trình y tế (MEDS).</li>
+            <li>Quản trị website, tối ưu SEO, triển khai Ads cơ bản.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="mx-auto max-w-6xl px-4 py-6">
+    <div class="glass rounded-2xl p-6 shadow-xl border border-white/60">
+      <h2 class="text-xl font-semibold mb-4">Sáng kiến & Sản phẩm</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Parafin -->
+        <article class="group p-5 rounded-xl border border-slate-200 bg-white hover:shadow-md transition">
+          <h3 class="text-base font-semibold text-indigo-700">Cải tiến quy trình chuẩn bị parafin trước điều trị</h3>
+          <p class="text-sm text-slate-600 mt-2">Chuyển từ đúc sáp thủ công sang nồi nấu và túi sáp parafin – an toàn, đồng nhất.</p>
+        </article>
+        <!-- Danh bạ bệnh viện -->
+        <article class="group p-5 rounded-xl border border-slate-200 bg-white hover:shadow-md transition">
+          <h3 class="text-base font-semibold text-emerald-700">Website Danh bạ bệnh viện</h3>
+          <p class="text-sm text-slate-600 mt-2">Theo dõi lịch trực & tìm nhanh số điện thoại nội bộ.</p>
+          <a class="mt-3 inline-flex text-sm text-sky-700 hover:underline" href="https://danhbabenhvien.vercel.app" target="_blank" rel="noopener">danhbabenhvien.vercel.app</a>
+        </article>
+        <!-- KH-Tổng hợp Sheets -->
+        <article class="group p-5 rounded-xl border border-slate-200 bg-white hover:shadow-md transition">
+          <h3 class="text-base font-semibold text-indigo-700">Trang tính quản lý công việc phòng KHTH</h3>
+          <p class="text-sm text-slate-600 mt-2">Theo dõi tiến độ, gửi email tự động, báo cáo hàng ngày.</p>
+          <a class="mt-3 inline-flex text-sm text-sky-700 hover:underline" href="https://docs.google.com/spreadsheets/d/1UcPt5jrSsgPpHtvzxyNJZzISxgRGKOS0MkQ9iUInanc/edit?gid=0#gid=0" target="_blank" rel="noopener">Xem file mẫu</a>
+        </article>
+        <!-- Quản lý văn bản -->
+        <article class="group p-5 rounded-xl border border-slate-200 bg-white hover:shadow-md transition">
+          <h3 class="text-base font-semibold text-emerald-700">Website quản lý văn bản – Phòng KHTH</h3>
+          <p class="text-sm text-slate-600 mt-2">Phân loại, quản lý văn bản số hoá.</p>
+          <a class="mt-3 inline-flex text-sm text-sky-700 hover:underline" href="https://khth.vercel.app" target="_blank" rel="noopener">khth.vercel.app</a>
+        </article>
+        <!-- Chia giờ thủ thuật -->
+        <article class="group p-5 rounded-xl border border-slate-200 bg-white hover:shadow-md transition">
+          <h3 class="text-base font-semibold text-indigo-700">MEDS - Hệ thống quản lý thời gian DVKT YHCT và PHCN</h3>
+          <p class="text-sm text-slate-600 mt-2">Xếp giờ châm cứu & PHCN, đảm bảo tuân thủ quy định BHXH.</p>
+          <a class="mt-3 inline-flex text-sm text-sky-700 hover:underline" href="https://medstrial.toihocy.com" target="_blank" rel="noopener">Mở MEDSTRIAL</a>
+        </article>
+        <!-- Hồ sơ thủ thuật -->
+        <article class="group p-5 rounded-xl border border-slate-200 bg-white hover:shadow-md transition">
+          <h3 class="text-base font-semibold text-emerald-700">Website tạo & quản lý Phiếu thực hiện thủ thuật</h3>
+          <p class="text-sm text-slate-600 mt-2">Giảm thời gian viết tay, quản lý hồ sơ chuẩn hoá.</p>
+          <a class="mt-3 inline-flex text-sm text-sky-700 hover:underline" href="https://phcnnl.vercel.app" target="_blank" rel="noopener">phcnnl.vercel.app</a>
+        </article>
+        <!-- Toihocy hub -->
+        <article class="group p-5 rounded-xl border border-slate-200 bg-white hover:shadow-md transition">
+          <h3 class="text-base font-semibold text-indigo-700">Hệ thống website cá nhân – toihocy.com</h3>
+          <p class="text-sm text-slate-600 mt-2">Chia sẻ tài liệu, thông tin y tế & học thuật.</p>
+          <div class="mt-3 flex flex-col gap-1">
+            <a class="text-sm text-sky-700 hover:underline" href="https://toihocy.com" target="_blank" rel="noopener">toihocy.com</a>
+            <a class="text-sm text-sky-700 hover:underline" href="https://baithuoc.toihocy.com" target="_blank" rel="noopener">baithuoc.toihocy.com</a>
+            <a class="text-sm text-sky-700 hover:underline" href="https://ecg.toihocy.com" target="_blank" rel="noopener">ecg.toihocy.com</a>
+            <a class="text-sm text-sky-700 hover:underline" href="https://yhct.toihocy.com" target="_blank" rel="noopener">yhct.toihocy.com</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="mx-auto max-w-6xl px-4 py-6">
+    <div class="glass rounded-2xl p-6 shadow-xl border border-white/60">
+      <h2 class="text-xl font-semibold">Liên hệ</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <p class="text-sm text-slate-700">Điện thoại/Zalo</p>
+          <a class="mt-1 inline-flex items-center gap-2 text-indigo-700 font-medium hover:underline" href="tel:+84345056117">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-4 w-4 fill-current"><path d="M6.6 10.8a15.7 15.7 0 006.6 6.6l2.2-2.2a1 1 0 011.1-.2 11.8 11.8 0 003.7.6 1 1 0 011 1v3.7a1 1 0 01-1 1A17.9 17.9 0 012 6a1 1 0 011-1h3.7a1 1 0 011 1 11.8 11.8 0 00.6 3.7 1 1 0 01-.2 1.1L6.6 10.8z"/></svg>
+            +84 345 056 117
+          </a>
+        </div>
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <p class="text-sm text-slate-700">Email</p>
+          <button id="copyMail" class="mt-1 ringy inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-700 text-sm" data-mail="hvvt8101997@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-4 w-4 fill-current"><path d="M4 4h10a2 2 0 012 2v2h-2V6H4v12h10v-2h2v2a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm16 6h-5v2h5v3l4-4-4-4v3z"/></svg>
+            Sao chép email
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mx-auto max-w-6xl px-4 py-10 text-sm text-slate-500">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <p>© <span id="y"></span> DR. HỒ VŨ VIỆT THẮNG • Y tế × Công nghệ</p>
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-indigo-50 text-indigo-700">YHCT‑PHCN</span>
+        <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-emerald-50 text-emerald-700">Full‑stack</span>
+        <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-sky-50 text-sky-700">Apps Script</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Copy email helper
+    const btn = document.getElementById('copyMail');
+    if(btn){
+      btn.addEventListener('click', () => {
+        const mail = btn.getAttribute('data-mail') || 'example@example.com';
+        navigator.clipboard.writeText(mail).then(() => {
+          btn.innerHTML = 'Đã sao chép: ' + mail;
+          setTimeout(()=> location.href = 'mailto:'+mail, 400);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
